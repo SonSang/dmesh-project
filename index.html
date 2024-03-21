@@ -278,6 +278,37 @@
 </section>
 <!-- End youtube video -->
 
+<!-- Experiment 2 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Experiment: Point Cloud Reconstruction</h2>
+      <h2> 
+          <font size="+1">
+            Here we assume each point cloud is comprised of 100K points.
+            From there, we sample <strong>10K points to initialize DMesh</strong>.
+            Then, we optimize DMesh by minimizing the <strong>expected Chamfer Distance loss</strong> to the given point cloud.
+          </font>
+          <br>
+          <br>
+      </h2>
+      <div class="columns is-centered has-text-centered">
+        <video width="100%" height="100%" source="" src="static/dmesh/1_0/anim.mp4" type="video/mp4" loop="true" autoplay="autoplay"  controls muted></video>                
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <font size="+1">
+          <strong>Point cloud of DMesh (Left) and extracted mesh (Right) during optimization.</strong> <br>
+          <br>
+          In the point cloud rendering, the color of each point represents its real value.  <br>
+          Note that some points disappear because they lose weights and thus <strong>discarded</strong> during optimization. <br>
+        </font>
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
 
 <!-- Video carousel -->
 <section class="hero is-small">
