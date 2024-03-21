@@ -325,45 +325,41 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Experiment 3 -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <!-- Paper video. -->
+      <h2 class="title is-3">Experiment: Multi-view Image Reconstruction</h2>
+      <h2> 
+          <font size="+1">
+          Since DMesh handles mesh connectivity in a differentiable manner, it can optimize point attributes
+          to <strong>recover the ground truth connectivity</strong> as much as possible, with only small perturbations
+          to the vertices of the mesh. 
+          </font>
+          <br>
+          <br>
+      </h2>
+      <div class="columns is-centered has-text-centered">
+        <img width="50%" height="100%" source="" src="static/dmesh/3_0/gt_0001.png" type="images"></img>
+        <video width="50%" height="100%" source="" src="static/dmesh/3_0/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay"  controls muted></video>
       </div>
+      <h2 class="subtitle has-text-centered">
+        <font size="+1">
+          <strong>Ground truth mesh (Left) and DMesh (Right) during optimization. </strong> <br>
+          <br>
+          Even though there are slight perturbations to the vertex positions, DMesh can restore <strong>99%</strong> of connectivity
+          of the ground truth mesh, while only having less than <strong>1%</strong> false positive ratio.
+          The periodical flickering of DMesh is induced by additional point insertion.
+        </font>
+      </h2>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
+<!-- End youtube video -->
 
 <!-- Paper poster -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -375,6 +371,7 @@
       </div>
     </div>
   </section>
+-->
 <!--End paper poster -->
 
 
