@@ -166,6 +166,122 @@
 </section>
 <!-- End paper abstract -->
 
+<div>
+    <div class="container-2 w-container">
+        <div class="container-2 w-container">
+            <h1 id="overview" class="experimenttitle"><center>Overview</center></h1>
+        </div>
+        <!--<div class="videoresult w-row">
+            <div class="w-col w-col w-col-12">
+                <video width="100%" height="100%" source="" src="./files/video/plant.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+            </div>  
+            <b><i>Figure 1. Optimization process to fit a plant model from random state. Our representation can represent
+                both open surface (leaves) and closed surface (pot), and support dynamic connectivity change.
+            </i></b> 
+        </div>-->
+
+        <p class="paragraph">    
+
+            <p>
+                <font size="+2">
+                <center>
+                    <br>
+                    "In this work, we present <strong><i>DMesh</i></strong>, a differentiable representation for general 3D mesh."
+                    <br>
+                    <br>
+                </center>
+                </font>
+            </p> 
+            
+            <figure>
+                <div class="w-col w-col w-col-12">
+                    <img width="100%" height="100%" source="" src="static/dmesh/overall.png" type="images"></img>
+                    <video width="100%" height="100%" source="" src="static/dmesh/2_2/anim.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+                    <figcaption>
+                        <p>
+                            <strong><i>Point cloud of DMesh (Left) and extracted mesh (Right) during optimization.</i>  </strong> <br>
+                            <br>
+                            <font size="+1">
+                                DMesh is an explicit shape representation that encodes every information into <strong>point cloud</strong>. <br>
+                                Then, we determine <strong>existence probability of faces</strong> based on the point cloud to extract mesh. <br>
+                                Therefore, we optimize the <strong>point attributes</strong> to reconstruct the target 3D mesh.
+                                <br><br>
+                            </font>
+                            
+                        </p>
+                    </figcaption>
+                </div>
+            </figure>
+
+
+            <figure>
+                <div class="w-col w-col w-col-12">
+                    <video width="33%" height="100%" source="" src="static/dmesh/1_0/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+                    <video width="33%" height="100%" source="" src="static/dmesh/2_0/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+                    <video width="33%" height="100%" source="" src="static/dmesh/2_3/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+            
+                    <figcaption>
+                        <p>
+                            <strong><i>Point cloud reconstruction (Left) / First (Middle) and last (Right) epoch of multi-view image reconstruction.</i>  </strong> <br>
+                            <br>
+                            <font size="+1">
+                                DMesh handles <strong>mesh connectivity</strong> in a differentiable manner. <br>
+                                Therefore, it admits <strong>dynamic topology change</strong>.<br><br>
+                            </font>
+                            
+                        </p>
+                    </figcaption>
+                </div>
+            </figure>
+
+
+            <figure>
+                <div class="w-col w-col w-col-12">
+
+                    <figure>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/deepfashion3d/164_0001.png" type="images"></img>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/deepfashion3d/30_0001.png" type="images"></img>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/deepfashion3d/320_0001.png" type="images"></img>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/deepfashion3d/448_0001.png" type="images"></img>
+                        <figcaption>
+                            Open surfaces (DeepFashion3d)
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/thingi32/252119_0001.png" type="images"></img>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/thingi32/313444_0001.png" type="images"></img>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/thingi32/527631_0001.png" type="images"></img>
+                        <img width="24%" height="100%" source="" src="static/dmesh/0_3/thingi32/64444_0001.png" type="images"></img>
+                        <figcaption>
+                            Closed surfaces (Thingi32)
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img width="33%" height="100%" source="" src="static/dmesh/0_3/objaverse/bigvegas_0001.png" type="images"></img>
+                        <img width="33%" height="100%" source="" src="static/dmesh/0_3/objaverse/camilla_0001.png" type="images"></img>
+                        <img width="33%" height="100%" source="" src="static/dmesh/0_3/objaverse/raspberry_0001.png" type="images"></img>
+                        <figcaption>
+                                Mixed surfaces (Objaverse)
+                        </figcaption>
+                    </figure>
+
+                    <figcaption>
+                        <p>
+                            <font size="+1">
+                                DMesh is very general representation, which can handle <strong>closed and open surfaces</strong> together.
+                            </font>
+                        </p>
+                    </figcaption>
+                </div>
+            </figure>
+            </p>
+        </p>
+    </div>
+</div>
+
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
