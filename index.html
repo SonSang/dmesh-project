@@ -262,7 +262,7 @@
       </h2>
       <div class="columns is-centered has-text-centered">
         <img width="50%" height="100%" source="" src="static/dmesh/3_0/gt_0001.png" type="images"></img>
-        <video width="50%" height="100%" source="" src="static/dmesh/3_0/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay"  controls muted></video>
+        <video width="50%" height="100%" source="" src="static/dmesh/3_0/slowdown_bunny.mp4" type="video/mp4" loop="true" autoplay="autoplay"  controls muted></video>
       </div>
       <h2 class="subtitle has-text-centered">
         <font size="+1">
@@ -318,9 +318,74 @@
           Note that connectivity keeps changing mainly due to <strong>additional regularizations</strong>. 
         </font>
       </h2>
+
+      <div id="pc-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/dmesh/overall.png" alt="overall-pipeline"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <strong>Overall pipeline of DMesh.</strong> <br>
+            <br>
+            <font size="+1">
+                DMesh is an explicit shape representation that encodes every information into <strong>point cloud</strong>. <br>
+                Then, we determine <strong>existence probability of faces</strong> based on the point cloud to extract mesh. <br>
+                Therefore, we optimize the <strong>point attributes</strong> to reconstruct the target 3D mesh.
+                <br><br>
+            </font>
+          </h2>
+        </div>
+
+        <div class="item">
+          <!-- Your image here -->
+          <video poster="" id="concept-video" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/dmesh/2_3/anim.mp4"
+              type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <strong>Point cloud of DMesh (Left) and extracted mesh (Right) during optimization.  </strong> <br>
+          </h2>
+        </div>
+        
+        <div class="item">
+          <!-- Your image here -->
+          <video width="33%" height="100%" source="" src="static/dmesh/1_0/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+          <video width="33%" height="100%" source="" src="static/dmesh/2_0/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+          <video width="33%" height="100%" source="" src="static/dmesh/2_3/anim_blender_wire.mp4" type="video/mp4" loop="true" autoplay="autoplay" controls muted></video>
+                  
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <strong>Point cloud reconstruction (Left) / First (Middle) and last (Right) epoch of multi-view image reconstruction.  </strong> <br>
+            <br>
+            <font size="+1">
+                DMesh handles <strong>mesh connectivity</strong> in a differentiable manner. <br>
+                Therefore, it admits <strong>dynamic topology change</strong>.<br><br>
+            </font>
+          </h2>
+        </div>
+
+        <div class="item">
+          <!-- Your image here -->
+  
+          <img width="33%" height="100%" source="" src="static/dmesh/0_3/deepfashion3d/320_0001.png" type="images"></img>
+          <img width="33%" height="100%" source="" src="static/dmesh/0_3/thingi32/527631_0001.png" type="images"></img>
+          <img width="33%" height="100%" source="" src="static/dmesh/0_3/objaverse/raspberry_0001.png" type="images"></img>                         
+          
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <strong>Point cloud reconstruction result for open surface (left), closed surface (middle), and mixed surface (right).  </strong> <br>
+            <br>
+            <font size="+1">
+                DMesh is very general representation, which can handle <strong>closed and open surfaces</strong> together.
+            </font>
+          </h2>
+        </div>
+      </div>  
       
-    </div>
   </div>
+</div>
 </section>
 <!-- End youtube video -->
 
