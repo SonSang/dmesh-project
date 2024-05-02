@@ -305,20 +305,6 @@
         </font>
       </h2>
 
-      <div class="columns is-centered has-text-centered">
-        <img width="50%" height="100%" source="" src="static/dmesh/1_0/bigvegas_normal.png" type="images"></img>
-        <img width="50%" height="100%" source="" src="static/dmesh/1_0/bigvegas_mesh_quality.png" type="images"></img>  
-      </div>
-      <h2 class="subtitle has-text-centered">
-        <font size="+1">
-          <strong>Effect of point orientations in the mesh reconstruction results. </strong> <br>
-          <br>
-          In our formulation, we can consider <strong>point orientations</strong> in reconstructing our mesh. <br>
-          When we give a larger coefficient for the point orientations, the reconstructed mesh usually gave more favorable results (left). <br>
-          Interestingly, when we set the coefficient to a large value, we could also observe a compact mesh that aligns with geometric features well (right).
-        </font>
-      </h2>
-
       
 
       <div class="columns is-centered has-text-centered">
@@ -332,6 +318,22 @@
           Since we already have sample points, we can use their subset to initialize our mesh. <br>
           Therefore, it <strong>converges fast</strong> to the target shape in several optimization steps. <br>
           Note that connectivity keeps changing mainly due to <strong>additional regularizations</strong>. 
+        </font>
+      </h2>
+
+      
+
+      <div class="columns is-centered has-text-centered">
+        <img width="50%" height="50%" source="" src="static/dmesh/1_0/bigvegas_normal.png" type="images"></img>
+        <img width="50%" height="50%" source="" src="static/dmesh/1_0/bigvegas_mesh_quality.png" type="images"></img>  
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <font size="+1">
+          <strong>Effect of point orientations in the mesh reconstruction results. </strong> <br>
+          <br>
+          In our formulation, we can consider <strong>point orientations</strong> in reconstructing our mesh. <br>
+          When we give a larger coefficient for the point orientations, the reconstructed mesh usually gave more favorable results (left). <br>
+          Interestingly, when we set the coefficient to a large value, we could also observe a compact mesh that aligns with geometric features well (right).
         </font>
       </h2>
 
